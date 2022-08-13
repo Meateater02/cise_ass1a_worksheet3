@@ -5,8 +5,8 @@ const config = require('config');
 const dotenv = require("dotenv");
 dotenv.config();
 
-const username = process.env.username;
-const password = process.env.password;
+const username = process.env.NAME;
+const password = process.env.PASSWORD;
 
 const db = "mongodb+srv://" + username + ":"+ password+ "@cluster0.psbqaha.mongodb.net/?retryWrites=true&w=majority";
 
