@@ -23,7 +23,7 @@ app.use(express.json({ extended: false }));
 // use Routes
 app.use('/api/books', books);
 
-if(process.env.NODE_ENV === "producion") {
+if(process.env.NODE_ENV === "production") {
     app.use(express.static(path.join(__dirname, '/mern_app/build')))
 
     app.get('*', (req, res) => {
