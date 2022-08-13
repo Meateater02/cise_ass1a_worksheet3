@@ -1,6 +1,10 @@
 const mongoose = require('mongoose');
 const config = require('config');
-const db = config.get('mongoURI');
+// const db = config.get('mongoURI');
+const username = process.env.username;
+const password = process.env.password;
+
+const db = "mongodb+srv://" + username + ":"+ password+ "@cluster0.psbqaha.mongodb.net/?retryWrites=true&w=majority";
 
 const connectDB = async () => {
   try {
