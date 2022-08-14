@@ -12,6 +12,7 @@ mern_app/node_modules
 
 # production
 /build
+mern_app/build
 
 # misc
 .DS_Store
